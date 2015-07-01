@@ -1644,9 +1644,9 @@ static CGFloat const GBAutoScrollDefaultInterval = 3.0f;
         
         if (self.scrollDirection == GBScrollDirectionHorizontal) {
             x = CGRectGetMaxX(frame);
-            y = frame.origin.y;
+            y = 0;
         } else {
-            x = frame.origin.x;
+            x = 0;
             y = CGRectGetMaxY(frame);
         }
         
@@ -1668,9 +1668,9 @@ static CGFloat const GBAutoScrollDefaultInterval = 3.0f;
         
         if (self.scrollDirection == GBScrollDirectionHorizontal) {
             x = CGRectGetMinX(frame) - [self pageWidth];
-            y = frame.origin.y;
+            y = 0;
         } else {
-            x = frame.origin.x;
+            x = 0;
             y = CGRectGetMinY(frame) - [self pageHeight];
         }
         
